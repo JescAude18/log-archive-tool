@@ -7,25 +7,24 @@
 ## log-archive
 ##
 
-echo -e "Welcome to the log-archive tool !\n"
+echo -e "\033[32m=========================== LOG ARCHIVE TOOL ===========================\n\033[0m"
+echo -e "\033[32m=                   Welcome to the log-archive tool !                  =\n\033[0m"
+echo -e "\033[32m========================================================================\n\033[0m"
 
-if [[ $# -lt 1 ]]; then
-    echo -e "\033[32mRun the script with a log directory !\033[0m"
+if [[ $# -ne 1 ]]; then
+    echo -e "\033[31mRun the script with only one log directory !\033[0m"
     exit 1
 else
     if [[ -d $1 ]]; then
-        echo -e "Yes directory provided as argument exist.\n"
         zip_date=$(date "+%Y%m%d_%H%M%S")
-        if [[ -d "./archives" ]]; then
-            tar -czf logs_archive_${zip_date}.tar.gz $1
-            mv logs_archive_${zip_date}.tar.gz ./archives
-        else
-            mkdir ./archives
-            tar -czf logs_archive_${zip_date}.tar.gz $1
-            mv logs_archive_${zip_date}.tar.gz ./archives
-        fi
+        archive_name="logs_archive_${zip_date}.tar.gz"
+        echo "Archiving logs from: $1"
+        echo "Archive name: $archive_name"
+        mkdir -p ./archives
+        tar -czf ./archives/${archive_name} $1
+        echo -e "Archive '${archive_name}' created successfully in ./archives directory !\n"
     else
-        echo -e "Nope directory doesn't exist. Enter a valid directory path !\n"
+        echo -e "Log directory doesn't exist. Enter a valid log directory path !\n"
         exit 1
     fi
 fi
