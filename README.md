@@ -1,7 +1,5 @@
 # log-archive-tool
 
-A small Bash utility that archives one log directory into a timestamped `.tar.gz` file and stores the result in `./archives`.
-
 ## Table of Contents
 
 - [About](#about)
@@ -19,7 +17,7 @@ A small Bash utility that archives one log directory into a timestamped `.tar.gz
 
 ## About
 
-`log-archive-tool` is a simple command-line script for packaging a single log directory into a compressed archive. It prints a short banner, validates the input, creates a timestamped archive name, and saves the archive in the local `archives/` directory.
+`log-archive-tool` is my fourth Linux/Bash project in my DevOps learning journey. It is a simple command-line script for packaging a single log directory into a compressed archive. It prints a short banner, validates the input, creates a timestamped archive name, and saves the archive in the local `archives/` directory.
 
 ## Features
 
