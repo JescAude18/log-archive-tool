@@ -46,7 +46,7 @@ log-archive-tool/
 
 - Bash
 - `tar`
-- Standard Unix utilities such as `date`, `mkdir`, and `mv`
+- Standard Unix utilities such as `date`, `mkdir`.
 
 The script is intended to run on Linux or any Unix-like environment with these tools available.
 
@@ -54,8 +54,20 @@ The script is intended to run on Linux or any Unix-like environment with these t
 
 ### 1. Clone or Download
 
+Option A - Clone with Git:
+
 ```bash
 git clone https://github.com/JescAude18/log-archive-tool.git
+cd log-archive-tool
+```
+
+Option B - Download ZIP from GitHub:
+
+1. Open the repository page: `https://github.com/JescAude18/log-archive-tool`
+2. Click `Code` -> `Download ZIP`
+3. Extract the archive and move into the project folder:
+
+```bash
 cd log-archive-tool
 ```
 
@@ -114,7 +126,7 @@ Note: when archiving an absolute path such as `/var/log`, `tar` may display a me
 
 ## Contributing
 
-Contributions are welcome ! To contribute:
+Contributions are welcome! To contribute:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/your-feature`)
