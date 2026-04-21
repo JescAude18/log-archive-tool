@@ -19,7 +19,7 @@
 
 `log-archive-tool` is my fourth Linux/Bash project in my DevOps learning journey. It is a simple command-line script for packaging a single log directory into a compressed archive. It prints a short banner, validates the input, creates a timestamped archive name, and saves the archive in the local `archives/` directory.
 
-**Project Reference:** [roadmap.sh/projects/server-stats](https://roadmap.sh/projects/log-archive-tool)
+**Project Reference:** [roadmap.sh/projects/log-archive-tool](https://roadmap.sh/projects/log-archive-tool)
 
 ## Features
 
